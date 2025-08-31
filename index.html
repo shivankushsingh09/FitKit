@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="BMI calculator app" />
+    <title>BMI Buddy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="/index.html">BMI Buddy</a></li>
+                <li><a href="/assets/pages/calorie-compass.html">Calorie Compass</a></li>
+                <li><a href="/assets/pages/water-watcher.html">Water Watcher</a></li>
+                <li><a href="/assets/pages/step-sankhya.html">Step Sankhya</a></li>
+            </ul>
+        </nav>
+        <hgroup>
+            <h1>BMI Buddy</h1>
+            <p>calculate your BMI</p>
+        </hgroup>
+    </header>
+    <main class="container">
+        <section>
+            <p>Set your height, weight and gender to see your BMI.</p>
+            <div>
+                <input type="number" id="weight" placeholder="Weight in kgs" required />
+                <input type="number" id="height" placeholder="Height in cms" required />
+                <select id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+                <button id="calculateBtn" type="button">Check My BMI</button>
+            </div>
+        </section>
+        <section>
+            <p id="bmiResult"></p>
+        </section>
+    </main>
+    <footer class="container neog-footer">
+        <small>
+            go from zero to hero at full stack development with
+            <a href="https://neog.camp">neog.camp</a>
+        </small>
+    </footer>
+    <script>
+        // if (true) {
+        // ....
+        // } else if (true) {
+
+        // } else if (true) {
+
+        // } else {
+
+        // }
+
+        function calculateBmiForMale(calculatedBmi) {
+            if (calculatedBmi < 18.5) {
+                return "Underweight";
+            } else if (calculatedBmi < 25) {
+                return "Normal";
+            } else if (calculatedBmi < 30) {
+                return "Overweight";
+            } else {
+                return "Obese";
+            }
+        }
+
+        // for testing purpose
+        // console.log(calculateBmiForMale(17));
+        // console.log(calculateBmiForMale(20));
+        // console.log(calculateBmiForMale(28));
+        // console.log(calculateBmiForMale(32));
+
+        function calculateBmiForFemale(calculatedBmi) {
+            if (calculatedBmi < 18) {
+                return "Underweight";
+            } else if (calculatedBmi < 24) {
+                return "Normal";
+            } else if (calculatedBmi < 29) {
+                return "Overweight";
+            } else {
+                return "Obese";
+            }
+        }
+
+        // runing tests for female category
+        // console.log(calculateBmiForFemale(16));
+        // console.log(calculateBmiForFemale(22));
+        // console.log(calculateBmiForFemale(27));
+        // console.log(calculateBmiForFemale(29));
+
+        function calculateCategory(calculatedBmi, gender) {
+            if (gender === "male") {
+                return calculateBmiForMale(calculatedBmi);
+            } else {
+                return calculateBmiForFemale(calculatedBmi);
+            }
+        }
+
+        function calculateBmi() {
+            const weightElement = document.getElementById("weight");
+            const heightElement = document.getElementById("height");
+            const genderElement = document.getElementById("gender");
+            const resultElement = document.getElementById("bmiResult");
+
+            const weight = parseFloat(weightElement.value);
+            const height = parseFloat(heightElement.value) / 100;
+            const gender = genderElement.value;
+
+            if (weight <= 0 || height <= 0) {
+                resultElement.innerText = "Please enter valid weight and height.";
+                return;
+            }
+
+            const bmi = weight / (height * height);
+            const finalBmi = bmi.toFixed(2);
+            const category = calculateCategory(bmi, gender);
+            resultElement.innerText = "BMI: " + finalBmi + " - " + category;
+        }
+
+        const calculateBtnElement = document.getElementById("calculateBtn");
+        calculateBtnElement.addEventListener("click", calculateBmi);
+    </script>
+</body>
+
+</html>
