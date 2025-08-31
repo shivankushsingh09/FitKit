@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+debug.log
+
+# Build and Dependency directories
+dist/
+build/
+.temp/
+tmp/
+.DS_Store
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# Misc
+*.bak
+*.swp
+*.lock
+*.tgz
+
+# Images cache or thumbnails
+__pycache__/
+.cache/
+coverage/
+
+# Mac system files
+.DS_Store
+
+# Output of 'npm pack'
+*.tgz
