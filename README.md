@@ -1,6 +1,6 @@
 # FitKit - Your All-in-One Fitness Toolbox
 
-FitKit is a comprehensive, easy-to-use web application designed to help you track, analyze, and improve your health and fitness journey. Whether you're monitoring your calories, checking your BMI, or keeping count of your daily steps, FitKit brings all essential tools together in one place.
+FitKit is a comprehensive, easy-to-use web application designed to help you track, analyze, and improve your health and fitness journey. Whether you're monitoring calories, checking your BMI, logging steps, or tracking hydration, FitKit brings all essential tools together in one place.
 
 ## 🚀 Live Demo
 
@@ -19,6 +19,9 @@ FitKit is a comprehensive, easy-to-use web application designed to help you trac
 - **Step Sankhya**  
   Log your steps and visualize your physical activity effortlessly.
 
+- **Water Watcher**  
+  Track your daily water consumption to stay hydrated.
+
 - **Responsive Design**  
   Optimized for desktop and mobile devices.
 
@@ -29,10 +32,10 @@ FitKit is a comprehensive, easy-to-use web application designed to help you trac
 
 ## 🖼️ Preview
 
-![BMI Buddy](assets/img/bmi-buddy.png)
-![Calorie Compass](assets/img/calorie-compass.png)
-![Step Sankhya](assets/img/step-sankhya.png)
-![Water Watcher](assets/img/water-watcher.png)
+![BMI Buddy](img/bmi-buddy.png)
+![Calorie Compass](img/calorie-compass.png)
+![Step Sankhya](img/step-sankhya.png)
+![Water Watcher](img/water-watcher.png)
 
 ---
 
@@ -41,18 +44,30 @@ FitKit is a comprehensive, easy-to-use web application designed to help you trac
 ```
 FitKit/
 │
-├── assets/
-│   ├── css/
-│   │   └── main.css         # Core stylesheet for layout and design
-│   ├── img/
-│   │   ├── BMI Buddy.png
-│   │   ├── Calorie Compass.png
-│   │   └── Step Sankhya.png
-│   └── pages/
-│       └── ...              # App pages (details not shown)
+├── css/
+│   └── main.css               # Core stylesheet for layout and design
 │
-├── README.md                # Project overview and instructions
-└── ...                      # Other project files
+├── img/
+│   ├── bmi-buddy.png
+│   ├── calorie-compass.png
+│   ├── step-sankhya.png
+│   └── water-watcher.png
+│
+├── js/
+│   ├── bmi-buddy.js
+│   ├── calorie-compass.js
+│   ├── step-sankhya.js
+│   └── water-watcher.js
+│
+├── pages/
+│   ├── calorie-compass.js
+│   ├── step-sankhya.js
+│   └── water-watcher.js
+│
+├── .gitignore
+├── index.html
+├── License.md
+└── README.md
 ```
 
 ---
@@ -64,7 +79,7 @@ FitKit/
    git clone https://github.com/shivankushsingh09/FitKit.git
    ```
 2. **Open the project:**
-   - You can view the app by opening `index.html` in your browser.
+   - View the app by opening `index.html` in your browser.
    - Or visit the [Live Demo](https://fitkit-v1.netlify.app/) directly.
 
 ---
@@ -79,7 +94,7 @@ FitKit/
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](License.md).
 
 ---
 
