@@ -32,10 +32,10 @@ FitKit is a comprehensive, easy-to-use web application designed to help you trac
 
 ## 🖼️ Preview
 
-![BMI Buddy](img/bmi-buddy.png)
-![Calorie Compass](img/calorie-compass.png)
-![Step Sankhya](img/step-sankhya.png)
-![Water Watcher](img/water-watcher.png)
+![BMI Buddy](/assets/img/bmi-buddy.png)
+![Calorie Compass](/assets/img/calorie-compass.png)
+![Step Sankhya](/assets/img/step-sankhya.png)
+![Water Watcher](/assets/img/water-watcher.png)
 
 ---
 
