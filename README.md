@@ -60,9 +60,9 @@ FitKit/
 │   └── water-watcher.js
 │
 ├── pages/
-│   ├── calorie-compass.js
-│   ├── step-sankhya.js
-│   └── water-watcher.js
+│   ├── calorie-compass.html
+│   ├── step-sankhya.html
+│   └── water-watcher.html
 │
 ├── .gitignore
 ├── index.html
