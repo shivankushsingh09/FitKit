@@ -41,31 +41,28 @@ FitKit is a comprehensive, easy-to-use web application designed to help you trac
 
 ## 📂 Folder Structure
 
-```
+```plaintext
 FitKit/
 │
-├── css/
-│   └── main.css               # Core stylesheet for layout and design
-│
-├── img/
-│   ├── bmi-buddy.png
-│   ├── calorie-compass.png
-│   ├── step-sankhya.png
-│   └── water-watcher.png
-│
-├── js/
-│   ├── bmi-buddy.js
-│   ├── calorie-compass.js
-│   ├── step-sankhya.js
-│   └── water-watcher.js
-│
-├── pages/
-│   ├── calorie-compass.html
-│   ├── step-sankhya.html
-│   └── water-watcher.html
-│
-├── .gitignore
 ├── index.html
+├── assets/
+│   ├── css/
+│   │   └── main.css                   # Core stylesheet for layout and design
+│   ├── img/
+│   │   ├── bmi-buddy.png
+│   │   ├── calorie-compass.png
+│   │   ├── step-sankhya.png
+│   │   └── water-watcher.png
+│   ├── js/
+│   │   ├── bmi-buddy.js
+│   │   ├── calorie-compass.js
+│   │   ├── step-sankhya.js
+│   │   └── water-watcher.js
+│   └── pages/
+│       ├── calorie-compass.html
+│       ├── step-sankhya.html
+│       └── water-watcher.html
+├── .gitignore
 ├── License.md
 └── README.md
 ```
