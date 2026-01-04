@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="BMI calculator app" />
+    <title>BMI Buddy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="/index.html">BMI Buddy</a></li>
+                <li><a href="/assets/pages/calorie-compass.html">Calorie Compass</a></li>
+                <li><a href="/assets/pages/water-watcher.html">Water Watcher</a></li>
+                <li><a href="/assets/pages/step-sankhya.html">Step Sankhya</a></li>
+            </ul>
+        </nav>
+        <hgroup>
+            <h1>BMI Buddy</h1>
+            <p>calculate your BMI</p>
+        </hgroup>
+    </header>
+    <main class="container">
+        <section>
+            <p>Set your height, weight and gender to see your BMI.</p>
+            <div>
+                <input type="number" id="weight" placeholder="Weight in kgs" required />
+                <input type="number" id="height" placeholder="Height in cms" required />
+                <select id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+                <button id="calculateBtn" type="button">Check My BMI</button>
+            </div>
+        </section>
+        <section>
+            <p id="bmiResult"></p>
+        </section>
+    </main>
+    <footer class="container neog-footer">
+        <small>
+            go from zero to hero at full stack development with
+            <a href="https://neog.camp">neog.camp</a>
+        </small>
+    </footer>
+
+    <script src="/assets/js/bmi-buddy.js"></script>
+</body>
+
+</html>
